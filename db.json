@@ -1,0 +1,13 @@
+{
+  "posts": [
+    { "id": 1, "title": "json-server", "author": "typicode" }
+  ],
+  "cities": [
+    { "id": 1, "body": "Mumbai", "postId": 1 },
+    { "id": 2, "body": "Delhi", "postId": 1 },
+    { "id": 3, "body": "Hyderabad", "postId": 1 },
+    { "id": 4, "body": "Pune", "postId": 1 },
+    { "id": 5, "body": "Bangalore", "postId": 1 }
+  ],
+  "profile": { "name": "typicode" }
+}

@@ -1,0 +1,21 @@
+<div class="container">
+  <div class="row">
+    <form>
+      <div class="col-sm-6">
+        <div class="input-group">
+        <input type="text" #searchBox class="form-control" placeholder="Search for..." value="{{city.body}}" (keyup)="setValue(searchBox.value)" [formControl]="search">
+        <span class="input-group-addon" id="basic-addon2">
+        <span class="glyphicon glyphicon-search"></span>
+        </span>
+        
+    </div>
+    <ul class="list-group" *ngIf="!selectFlag">
+            <li  *ngFor="let city of cities | async" class="list-group-item" (click)="setCity(city)">
+                {{city.body}}
+            </li>
+        </ul>
+    </div>
+    </form>
+    
+  </div>
+</div>
